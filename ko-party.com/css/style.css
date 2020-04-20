@@ -1,0 +1,142 @@
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body,html {
+    font-family: 'Roboto', sans-serif;
+}
+/* .row {
+    align-items: center;
+} */
+.menu {
+    color: black;
+}
+.menu:hover {
+    color: red;
+    text-decoration: none;
+}
+.logo {
+    height:70px ;
+    width:150px;
+}
+.intro {
+    /* display: block;
+    width: 100%; */
+    position: relative;
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%; */
+    height: 90vh;
+    /* z-index: 9; */
+}
+.intro::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background: linear-gradient(to right, rgba(255,255,255,0.99) 20%, rgba(255,255,255,0.7) 70%, rgba(255,255,255,0) 95%);
+}
+a.btn.btn-primary.btn-lg {
+    background: #d82d2d;
+}
+.title { 
+    font-size: 40px;
+    font-weight: bold;
+}
+.container {
+    position: relative;
+}
+.jumbotron {
+    height: 100%;
+    background-image: url(https://ko-party.com/storage/app/media/thebg_good4.jpg);
+}
+a.btn.btn-primary {
+    border-radius: 45px;
+}
+
+.row .avata {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.row.offset-md-2 {
+    align-items: flex-start;
+}
+section.second {
+    height: 400px;
+}
+
+.third {
+    background-color: rgb(240, 240, 240);
+}
+#list {
+    width: 70%;
+    height: 500px;
+}
+.inner {
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.08);
+    background-color: #fff;
+    padding: 0;
+    margin: 5px;
+    transition: 0.5 ;
+    border-radius: 8px;
+}
+.inner:hover {
+    transform: translate3d(0,-6px,0);
+}
+.item-content {
+    /* margin-left: 15px; */
+    color: #402828;
+}
+.item-img img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.fourth {
+    height: 500px;
+}
+.emailsub {
+    font-size: 20px;
+
+}
+.form-control {
+    width: 700px;
+    height: 55px;
+    margin: 30px 0;
+}
+
+.btn {
+    background: #d81212;
+    color: white;
+    border-radius: 25px;
+    width: 100px;
+}
+
+hr{
+    display: block;
+    margin: 40px 120px;
+    border-style: inset;
+    border-width: 1px;
+}
+#note1 {
+    width: 70%;
+}
+
+.note {
+    margin: 40px;
+}
+.account-item {
+    list-style: none;
+}
+ul {
+    padding: 0;
+}
+.account-link {
+    color: black;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+.account-link:hover {
+    padding-left: 20px;
+    color: red;
+    text-decoration: none;
+}

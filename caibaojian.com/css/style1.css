@@ -1,0 +1,156 @@
+@import "common.css";
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/*
+Header 
+*/
+body, html {
+    background: #f0f0f0;
+    /* font: 14px/1.8 'Microsoft Yahei','\5FAE\8F6F\96C5\9ED1',Arial,'Hiragino Sans GB','\5B8B\4F53';  */
+    color: #666;
+}
+.logo-name { margin: 0; }
+
+/* sub-menu*/
+ul.top-menu { display: flex; }
+nav.container { display: flex; }
+ul.menu-right{margin-left: auto;}
+.sub-menu{ display: none; position: absolute; top: auto; width: 200px; 
+          background-color: rgb(71, 78, 93); } 
+ul li:hover>.sub-menu{ display: block; }
+.menu-right .sub-menu { right: 0; }
+.menu-children{ display: none; position: absolute; top: 0; left: 100%; width: 200px; 
+    background-color: rgb(71, 78, 93); color: white; } 
+.menu-children li:hover{background: #4ceac8 !important;}
+ul li ul li:hover>.menu-children{ display: block; }
+
+.navbar { background-color: var(--mainBg); }
+.navbar li { position: relative; list-style:none; }
+.navbar li a { font-size: 16px; line-height: 36px; color: #b3b5ba; padding-left: 10px; }
+   
+.navbar>nav>ul>li>a { display: block; line-height: 50px; padding: 0 15px; color: #fff; }
+/* .navbar li:hover li a {background-color: #474e5d; } */
+.top-menu li:hover{ background-color: #ea4c89;}
+.breadcrumb { background: #e6e6e6; padding: 6px 0; height: 45px; }
+.left {margin-top: 5px; }
+input[type=text] { border: 1px solid #e6e6e6; padding: 4px 6px; background: #fff; height: 31px; }
+input[type=submit] { background: #458fd2; color: #fff; padding: 4px 8px; border: 1px solid #458fd2; }
+.img-header{ margin: 10px auto;max-width: 1100px; }
+/*Main content*/
+.primary .content { flex: 2; padding: 0 10px }
+.aliyun-inner { display: flex; border: 1px solid #ddd; margin-top: 15px; margin-bottom: 30px; }
+.aliyun-inner .middle-box{ display: flex; align-items: center; justify-content: center; width: 33.3%; height: 80px; background: #fff;
+                            font-size: 12px; padding: 10px; font-weight: bold; color: #5e5e5e; }
+.inner-box { padding: 15px; border: 1px solid #e6e6e6; background-color: #fff; border-radius: 4px; 
+                margin-bottom: 30px;color: black; }
+.inner-box:hover { box-shadow: 2px 2px 8px rgba(0,0,0,0.2); }
+h1.title{ color: #458fd2; text-align: center;}
+h1.title:hover { color: #ea4c89; }
+.entry-header { position: relative; }
+.entry-meta { margin-bottom: 15px; }
+.comments-number { width: 30px; height: 25px; background-color: #ea4c89; color: #fff; position: absolute; top: 0; right: 0; display: inline-block; border-radius: 4px; text-align: center; line-height: 25px; }
+.comments-number::after { content: ""; border: 4px solid #ea4c89; position: absolute; top: 100%; left: 8px; border-bottom-color: transparent; border-right-color: transparent; }
+.read-more { display: inline-block;background-color: #ccc; color: #fff; line-height: 37px; padding: 0 15px; border-radius: 4px; }
+.read-more:hover { background: #ea4c89; border-color: #ea4c89;}
+ 
+/*breadcrumb*/
+.breadcrumb ul { list-style: none;  display: flex; }
+.breadcrumb li { margin-left: 10px; }
+.breadcrumb a{ color: #5e5e5e; }
+
+/*Sidebar*/
+.primary .sidebar { flex: 1; padding: 0 10px }
+.sidebar .widget h3 { font-size: 15px; color: #666; margin-bottom: 10px; font-weight: 700;}
+.social { list-style: none; display: flex; }
+.social li a {display: flex; font-size: 26px; border-radius: 5px; width: 50px; height: 48px;
+         margin: 0 10px 0; justify-content: center; align-items: center; }
+.social .weibo a {background-color: #39bdfd; color: #fff;}
+.social .weibo a:hover { background-color: #49b4e8; }
+.social .qq a {background-color: #8a8a8a; color: #fff;}
+.social .qq a:hover {background-color: #b3acac;}
+.social .feed a {background-color: #ff966d; color: #fff;}
+.social .feed a:hover {background-color: #d88362;}
+.social .email a {background-color: #f0b5bd; color: #fff;}
+.social .email a:hover {background-color: #f3c8ce;}
+.social .weixin a {background-color: #000; color: #fff;}
+.social .weixin a:hover {background-color: #2d2c2c;}
+
+h3.widget-title { margin-bottom: 10px; }
+h4 { font-weight: 500; }
+.widget-scoll li { list-style: none; padding: 0 15px; border-left: 1px solid #c36565; position: relative;}
+.widget-scoll li::before { content: ""; width: 7px; height: 7px; background-color: red;position: absolute; 
+        top: 0; left: 0;border-radius: 50%; transform: translate(-50%, 0); border: 4px solid white; }
+.widget-scoll a { color: black; }
+.widget-scoll a:hover { color: red; }
+aside.widget-scoll.inner-box { height: 470px; overflow: hidden; }
+.widget-scoll ul { overflow-y: scroll; height: 400px; padding: 7px; margin-right: -35px; }
+
+.widget-text a { background: #f7f7f7; border-radius: 3px; margin: 0 1px 1px 0; color: #333; padding: 6px 8px; }
+.widget-text a:hover { color: red; background: cornflowerblue;  }
+
+.tab-nav { display: flex; justify-content: space-around; }
+/* .tab-content-wrap { display: flex; padding-left: 20px; } */
+.tab-content-wrap { text-align: left; }
+.tab-content-wrap li { list-style: none; }
+
+.scroll-top {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+span.button {
+    width: 30px;
+    height: 35px;
+    background: #1a03de;
+    color: white;
+    margin-bottom: 12px;
+    display: flex;
+}
+i.fa.fa-chevron-up {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+i.fa.fa-chevron-down {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+footer {
+    background-color: #484848;
+}
+.container {
+display: flex;
+}
+.widget-text {
+    width: 40%;
+    color: rgb(202, 202, 202);
+}
+.account {
+    width: 30%;
+    color: rgb(202, 202, 202);
+}
+.contact {
+    width: 30%;
+    color: rgb(202, 202, 202);
+}
+li.cat-item, .contact li  {
+    list-style: none;
+}
+.cat-item a {
+    color: rgb(202, 202, 202);
+}
+.cat-item a:hover {
+    color: white;
+}
+#copyright {
+    background-color: #232323;
+    padding: 15px;
+    color: whitesmoke;
+    text-align: center;
+}
