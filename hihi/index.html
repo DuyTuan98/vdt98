@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <div class="btn-click">
+        CLICK ME!
+    </div>
+</body>
+</html>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .btn-click{
+        position: fixed;
+        top: 100px;
+        left: 100px ;
+        width: 100px;
+        height: 50px;
+        border-radius: 25px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        font-size: bold;
+        background-color: red;
+        box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    }
+    .container{
+        width: 500px;
+        height: 500px;
+        background-image: url('heo.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* transform: rotate(45deg); */
+        margin: 100px auto;
+    }
+    .class-add{
+        width: 700px;
+        height: 700px;
+        transition: width 2s, height 2s, transform 2s;
+        background-image: url(a.jpg);
+        /* background-size: 500px 500px; */
+         /* background-repeat: no-repea t; */
+        position: relative;  
+    }
+    .class-add::after{
+        content: "hôn hông mà nhìn !!! ahihi";
+        font-size: 30px;
+        font-style: bold;   
+        color: rgb(245, 0, 0);
+        position: relative;
+        top: 50px;
+        left: 141px;
+    }
+</style>
+<script>
+ 
+    let x=document.querySelector('.btn-click');
+    x.addEventListener("click", function(){
+        document.querySelector('.container').classList.toggle('class-add');
+    })
+</script>
