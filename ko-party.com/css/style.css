@@ -76,7 +76,7 @@ section.second {
     background-color: #fff;
     padding: 0;
     margin: 5px;
-    transition: 0.5 ;
+    transition: all 0.5 ;
     border-radius: 8px;
 }
 .inner:hover {
