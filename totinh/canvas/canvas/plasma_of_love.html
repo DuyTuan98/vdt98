@@ -1,0 +1,19 @@
+<canvas></canvas>
+<script>
+var c = document.getElementsByTagName('canvas')[0];
+var b = document.body;
+var a = c.getContext('2d');
+f = b.style;
+f.margin = "0px";
+f.overflow = "hidden";
+i = window, j = i.innerWidth, k = i.innerHeight, m = Math, n = m.sin, q = m.cos, r = 0, s = [], Z = 128;
+c.width = j;
+c.height = k;
+for (var u = 0; 256 > u; u++) s[u] = "rgb(255," + ~~(Z - .5 * u) + "," + (255 - u) + ")", s[u + 256] = "rgb(255," + (255 - u) + ",255)";
+
+function v(o, e, d, p) {
+	return m.sqrt((o - d) * (o - d) + (e - p) * (e - p))
+}
+a.globalAlpha = .2;
+setInterval("function o(d,e){var g=32*(n(v(d+l,e,Z,Z)/8)+n(v(d-l,e,64,64)/8)+n(v(d,e+l/7,192,64)/7)+n(v(d,e,192,100)/8)+4),h=.25*(Z*n(.0625*d)+256+Z*n(.03125*e)+Z+Z*n(.125*v(d+l,e-l,j,k))+Z+Z*n(.125*m.sqrt(d*d+e*e)));return t*g+(1-t)*h}e=80*(k/j),d=j/80,p=k/e,l=Date.now()/64,t=n(.05*l);r++;for(var w=-d/8+m.random()*d/4,h=0,g;h<e;h++)for(g=0;80>g;g++)a.fillStyle=s[~~(o(g,h)+r)%512],a.fillRect(g*d+w,h*p+w,d,p);e=m.abs(t*(j/64));for(d=0;100>d;d+=.25)g=16*m.pow(n(d),3),h=13*q(d)-5*q(2*d)-2*q(3*d)-q(4*d),a.fillStyle=s[512-~~(o(g,h)+r)%512],a.fillRect(g*e+j/2,-h*e+k/2,8,8)", 25);
+</script>

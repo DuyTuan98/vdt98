@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container"> 
+   
+        <div class="title">
+          <h1>Yêu Anh Không Em ?</h1>
+          <p>Tắt cái này đi mà ko trả lời sẽ phải yêu anh suốt đời ❤</p>
+        </div> <!-- Tieu de -->
+        
+                 
+        <main class="main">
+          
+          <div class="content">
+             <div class="btn-wrap">
+               <button class="btn1 btn">Ko bao giờ😔</button>
+               <button class="btn2 btn">Em đồng ý😍</button>
+             </div><!-- Btn wrap -->
+            
+            <div class="transform-wrap"> 
+              <img src="https://i.pinimg.com/originals/2a/d9/f3/2ad9f3d27327a38eb2f213e8e618f707.jpg" alt="" id="hinhday">
+              <div class="item-list">
+                <p class="item item1">I</p>
+                <p class="item item2">LOVE</p>
+                <p class="item item3">YOU</p>
+                <p class="item item4">💙💙</p>  
+              </div><!-- /.item-list -->
+            </div><!-- /.transform-wrap -->
+          </div>
+                     
+        </main>
+        
+        
+     </div><!-- /.container -->
+     
+     <script>
+         
+let btn1 =  document.querySelector('.btn1');
+let btn2 =  document.querySelector('.btn2');
+// let btns = document.querySelectorAll('.btn');
+let itemwrap = document.querySelector('.item-list');
+let img = document.querySelector('#hinhday');
+
+
+
+btn1.addEventListener('mouseenter', ()=>{
+  btn1.style.transform = "translateX(-400px)";
+})
+
+btn1.addEventListener('transitionend', ()=>{
+  btn1.style.transform = "translateX(400px)";
+})
+
+btn2.addEventListener('click', ()=>{
+  itemwrap.classList.add('item-active')
+  img.classList.add('active')
+})
+
+
+     </script>
+</body>
+</html>

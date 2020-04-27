@@ -1,0 +1,124 @@
+.container {
+    height: 700px;
+    width: 100%;
+    position: relative;
+    background-image:url('tim2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title {
+    position: fixed;
+    left: 50%;
+    text-align: center;
+    font-size: 27px;
+    color: red;
+    line-height: 23px;
+}
+
+.btn {
+    display: flex;
+    height: 500px;
+    position: fixed;
+    left: 60%;
+    top: 50%;
+  
+}
+.btn1, .btn2 {
+font-size: 20px;
+height: 50px;
+border-radius: 25px;
+background-color: rgba(246, 96, 159, 0.774);
+color: white;
+padding: 10px;
+margin-right: 25px;
+
+}
+.btn1:hover{
+align-self: center;
+}
+.btn2{
+    cursor: pointer;
+    
+}
+.transform{
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.btn2:hover {
+    background-color: rgba(255, 0, 106, 0.774);
+}
+
+    .loveyou{
+        background-image: url('yeu.jpg');
+        position: absolute;
+        left: 0;
+        height: 700px;
+        width: 400px;
+        transform: rotate(360deg);
+    }
+   
+
+
+.item{
+    font-family: 'Lobster', cursive;
+    transition: transform 0.5s;
+    font-size: 50px;
+    color: #ff00b1;
+    position: absolute;
+    /* left: -365px;
+    top: -277px; */
+    /* transform: translateX(-1000%); */
+}
+.transform.item.love-active {
+    transform: translateY(0);
+}
+/* .transform.love-active > *:first-child {
+    transform: translateY(0);
+} */
+
+
+.transform.loveyou.love-active .item > * {
+    transition: 0.2s;
+}
+.transform.loveyou.love-active .item > *:nth-child(2) {
+    transition: 0.4s;
+}
+.transform.loveyou.love-active .item > *:nth-child(3) {
+    transition: 0.8s;
+}
+.transform.loveyou.love-active .item > *:nth-child(4) {
+    transition: 1s;
+}
+
+
+
+
+    /* .item1.love-active { */
+        /* transform: translate(-1800%); */
+        /* transition: 0.2s; */
+    /* } */
+    .item2.love-active {
+        transition: 0.4s;
+    }
+    .item3.love-active {
+        /* transform: translate(-1400%); */
+        transition: 0.6s;
+    }
+    .item4.love-active {
+        /* transform: translate(-1200%); */
+        transition: 0.8s;
+    }
+
+    /* .transform.love-active >* .item1 {
+        transform: translate(-1800%);
+    }
+    .item2.love-active {
+        transform: translate(-1600%);
+    }
+    .item3.love-active {
+        transform: translate(-1400%);
+    }
+    .item4.love-active {
+        transform: translate(-120%);
+    } */
+    

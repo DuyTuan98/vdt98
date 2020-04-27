@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>love💙</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container"> 
+            <div class="title">
+                <h1>Yêu Anh Không ?</h1>
+                <p>Tắt cái này đi mà ko trả lời sẽ phải yêu anh suốt đời ❤</p>
+            </div>
+            
+             <div class="main">
+                 <div class="btn">
+                    <button class="btn1">Ko bao giờ😔</button>
+                    <div class="transform">
+                        <button class="btn2">Em đồng ý😍</button>
+                        <div class="item">
+                            <p class="item1">I</p>
+                            <p class="item2">LOVE</p>
+                            <p class="item3">YOU</p>
+                            <p class="item4">💙💙</p>  
+                        </div>
+                    </div>                  
+                 </div>                
+             </div>
+        </div>
+        <script>
+            var loves = document.querySelectorAll('.transform');   
+            function loveyou(){
+              this.classList.add('loveyou');
+            }
+            function toggleActive(e) {
+              this.classList.add('love-active');             
+            }
+    loves.forEach((love)=> love.addEventListener('click', loveyou));
+    loves.forEach(love => love.addEventListener('transitionend', toggleActive));
+
+        </script>
+    </body>
+    </html>
+
+    
