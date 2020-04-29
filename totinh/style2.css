@@ -114,8 +114,8 @@
     }
 
     audio.audio {
-      position: absolute;
+      /* position: absolute;
       top: 20%;
-      left: 50%;
+      left: 50%; */
       opacity: 0;
   }
