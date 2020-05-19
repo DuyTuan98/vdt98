@@ -12,7 +12,7 @@
   <h2 style="margin:5px">My To Do List</h2>
   <div class="wrap">
     <input type="text" id="myInput" placeholder="Enter new todo list...">
-    <span onclick="newElement()" class="addBtn">Add</span>
+    <div onclick="newElement()" class="addBtn">Add</div>
 </div>
 </div>
 
@@ -32,16 +32,21 @@
 var myNodelist = document.getElementsByTagName("Li");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
-  var span1 = document.createElement("SPAN");
-  var span2 = document.createElement("SPAN");
+  var span1 = document.createElement("span");
+  var span2 = document.createElement("span");
+  var span3 = document.createElement("span");
   var Delete = document.createTextNode("Delete");
   var Edit = document.createTextNode("Edit");
+  var Cancel = document.createTextNode("Cancel");
   span1.className = "close";
   span2.className = "edit";
+  span3.className = "cancel";
   span1.appendChild(Delete);
   span2.appendChild(Edit);
+  span3.appendChild(Cancel);
   myNodelist[i].appendChild(span1);
   myNodelist[i].appendChild(span2);
+  myNodelist[i].appendChild(span3);
 }
 
 // close button 
@@ -115,7 +120,18 @@ function newElement() {
         } 
       })
     })
+  //cancel
   
+    // const btnCancel = document.querySelectorAll('span');
+    // btnCancel.forEach((item) => {
+    //     item.addEventListener('click', function() {
+          
+    //       if(item.innerHTML == 'Edit') {
+            
+    //         item.parentNode.classList.add('cancel')        
+    //       } 
+    //     })
+    //   })
 </script>
 </body>
 </html>
