@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Todo-List</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">My To Do List</h2>
+  <div class="wrap">
+    <input type="text" id="myInput" placeholder="Enter new todo list...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+</div>
+
+<ul id="myUL">
+  <li class="checked">Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+  <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+  <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+  <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+  <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+  <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+</ul>
+
+
+<script>
+
+// close button and edit button
+var myNodelist = document.getElementsByTagName("Li");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span1 = document.createElement("SPAN");
+  var span2 = document.createElement("SPAN");
+  var Delete = document.createTextNode("Delete");
+  var Edit = document.createTextNode("Edit");
+  span1.className = "close";
+  span2.className = "edit";
+  span1.appendChild(Delete);
+  span2.appendChild(Edit);
+  myNodelist[i].appendChild(span1);
+  myNodelist[i].appendChild(span2);
+}
+
+// close button 
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add checked
+var list = document.querySelector('ul');
+list.addEventListener('click', function(e) {
+  if (e.target.tagName === 'LI') {
+    e.target.classList.toggle('checked');
+  }
+}, false);
+
+// Add button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("Không được để trống!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span1 = document.createElement("span");
+  var span2 = document.createElement("span");
+  var Edit = document.createTextNode("Edit");
+  var Delete = document.createTextNode("Delete");
+  span1.classList.add('edit');
+  span1.appendChild(Edit);
+  span2.classList.add('close');
+  span2.appendChild(Delete);
+  li.appendChild(span1);
+  li.appendChild(span2);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+  const btnEdit = document.querySelectorAll('span');
+    btnEdit.forEach((item) => {
+      item.addEventListener('click', function() {
+        item.innerHTML = 'Edit'
+        if(item.innerHTML == 'Edit') {
+          item.innerHTML = 'Save';
+          item.parentNode.classList.remove('checked')        
+        } 
+      })
+    })
+}
+
+//save
+  const btnEdit = document.querySelectorAll('span');
+    btnEdit.forEach((item) => {
+      item.addEventListener('click', function() {
+        item.innerHTML = 'Edit'
+        if(item.innerHTML == 'Edit') {
+          item.innerHTML = 'Save';
+          item.parentNode.classList.remove('checked')        
+        } 
+      })
+    })
+  
+</script>
+</body>
+</html>
