@@ -1,0 +1,105 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+html {font-size: 10px;}
+body {
+    width: 100%;
+    margin: 0 auto ;
+}
+@font-face {
+    font-family: myFont;
+    src: url('Arvo/Arvo-Regular.ttf');
+  }
+h1,h2{
+    font-family: 'myFont', sans-serif;
+    letter-spacing:3px;
+    word-spacing :10px;
+}
+h1 {
+    font-size:4rem;
+    text-align: center;
+}
+h2 {
+    font-size: 3rem;
+}
+p, li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'myFont',serif;
+    letter-spacing:3px;
+    word-spacing :4px;
+} 
+
+body  {
+    padding: 0 1%;
+}
+section,aside,nav,footer {
+    padding: 1%;
+}
+img{
+    width: 1.6rem;
+    margin-bottom: -1px;
+}
+/* p{text-indent: 20px;} */
+
+header h1{
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 4px solid rosybrown;
+    border-top: 4px solid rosybrown;    
+}
+section{
+    width: 48%;
+    float: left;
+}
+aside{
+    width: 23%;
+    float: left;
+}
+section ul{color: black;}
+ a{
+    color:rosybrown;
+}
+nav{
+    width: 23%;
+    float: left;
+}
+nav ul{
+    list-style: none;
+    float: right;
+    margin-right: 5%;
+}
+nav ul li{
+
+    margin-bottom: 25px;
+    border: 2px solid rosybrown;
+    width: 200px;
+    height: 65px;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    
+    display: block;
+    margin: 15px;
+    color:rosybrown; 
+}
+footer{
+    width: 100%;
+    display: flex;
+}
+a:hover{
+    text-decoration: none;
+} 
+nav ul li:hover{
+    border: 2px solid #29487d;
+    background-color: #4267b2;
+    
+}
+nav ul li a:hover{
+    color:white;
+}

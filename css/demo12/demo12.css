@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+ }
+body{
+    margin: 0%;
+    padding: 0;
+    display: flex;
+}
+nav{
+    width: 25%;
+    height: 1000px;
+    background-color: #3e4e68;
+}
+.reduction{
+    width: 10%;
+}
+.c{
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+nav .list,.list_menu,.list_seach{
+    display: flex;
+    border-bottom: 1px solid #38465e;
+    height: 45px;
+    align-items: center;
+    padding-left: 1vw;   
+    justify-content: space-between;
+    color: white;
+}
+nav .list .left{
+    display: flex;
+    align-items: center;
+}
+ i{
+    margin-right: 1vw;
+    font-size: 2vw;
+    cursor: pointer;
+}
+nav .list button{
+    margin-right: 2vw;
+    background-color: #65c3df;
+    border: 2px solid #5ab0ca;
+    cursor: pointer;
+}
+.list p{
+    cursor: pointer;
+}
+#txt{
+    width: 22vw;
+}
+.list {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+}
+/* end nav */
+main{
+    width: 75%;
+    margin: 0 1px; 
+}
+main .head{
+    width: 100%;
+    height: 45px;
+    background-color: #3e4e68;
+    display: flex;
+    align-items: center;
+}
+main .head p{
+    margin: 0 1vw;
+    color: rgb(22, 21, 21);
+    font-size: 2vw;
+}
+#more{
+    color: #72bee6;
+}
+main #Home .head{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    background-color: #e8edef;
+    align-items: center;
+}
+main #Home .head p{
+    margin: 0 1vw;
+    font-size: 1.5vw;
+}
+main #Home .head button{
+    margin: 0 1vw;
+    background-color: #3e4e68;
+    border: 2px solid #3e4e68;
+    color: #e8edef;
+}
+main #Home .images{
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw;
+   
+}
+main #Home .images .image{
+    height: 7vw;
+    width: 15vw;
+   
+}
+.images .image{
+    display: flex;
+    justify-content: space-between;
+}
+.images .image .info{
+    margin: 2vw 0 0 1vw;
+    color: white;
+    font-size: 1.2vw;
+    word-spacing: 1px; 
+
+}
+.images .image .info p{
+    margin: 0;
+}
+.images .image i{
+    margin: 1vw 1vw 0 0;
+    font-size: 2.5vw;
+    color: white;
+}
+main .data{
+    height: 45px;
+    margin: 2vw 3vw;
+    background-color: #e8edef;
+    display: flex;
+    align-items: center;
+}
+main .data p{
+    margin-left: 2vw;
+    font-size: 1.2vw;
+}
+#Home img{
+    margin-left: 3vw;
+}
+.show_hide img{
+    width: 100%;
+    height: 100%;
+}
+#home .k-grid-header{
+    background-color:  #1d3b47;
+}
+main .off{
+    display: none;
+}
+#Foods{
+    font-size: 1.5vw;
+    background-color: #4d4d4d;
+}
+#Foods a{
+    width: 100px;
+    height: 20px;
+    margin: 10px;
+}

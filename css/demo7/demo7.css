@@ -1,0 +1,108 @@
+html{margin: 0;padding: 0;}
+body{
+    height: 700px;  
+    width: 500px;
+    margin: 0 auto;   
+}
+main{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom,rgb(189, 184, 184) -5%, white,white , white,  rgb(189, 184, 184)105%);    
+}
+header{
+    border-top: 3px solid red;
+}
+header img, footer img{
+    width: 100%;
+    height: auto;
+}
+article{
+    position: relative;
+    height: 80%;
+    width: 100%;
+    top: -8%;
+}
+.logo {
+    
+    position: relative;
+    left: 10%;
+    width: 20%;
+    height: auto;
+    top:10px;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+.logo h1{
+    position: absolute;
+    top:15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2em;
+    color: white;    
+}
+address{
+    position: absolute;
+    right: 40px;
+    bottom: -100px;
+}
+footer{
+    position: absolute;
+    bottom: -0.5%;    
+}
+footer img{
+    border-bottom: 3px solid red;
+}
+p{
+    font-size: 0.8em;
+}
+
+ @media screen and (max-width: 500px) {
+    body{
+        height: auto;  
+        width: 100%;
+        margin: 0 auto;   
+    }
+    main{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        background-image: linear-gradient(to bottom,rgb(189, 184, 184) -5%, white,white , white,  rgb(189, 184, 184)105%);    
+    }
+    header img, footer img{
+        max-width: 100%;
+        height: auto;
+    }
+    article{
+        padding-bottom:  100% ;
+    }
+    article{
+        position: relative;
+        height: 80%;
+        width: 100%;
+        top: -60%;
+
+    }
+    .logo {
+        margin-top: -10%;
+        position: relative;
+        left: 5%;
+        width: 20%;
+        height: auto;    
+    }
+    .logo h1{
+        position: absolute;
+        top: 20%;
+        font-size: 2.5vw;
+    }
+    address{
+        position: absolute;
+        right: 50px;
+        bottom: 2%;
+        font-size:2vw; 
+    }
+}

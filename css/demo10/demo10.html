@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="products.json"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="demo10.css">
+</head>
+<body>
+    <header>
+        <img src="icon/bean_can.png" alt="">
+        <p>The Can Store</p>
+        <img src="icon/bean_can.png" alt="">
+    </header>
+    <main>
+        <nav>
+            <p>Choose a category:</p>
+            <select id="customers" onchange="genderChanged(this)"  >
+                <option value="all">All</option>
+                <option value="vegetables">vegetables</option>
+                <option value="meat">meat</option>
+                <option value="soup">soup</option>
+            </select>
+        <form action="#">
+                <p>Enter seach term</p> 
+                <input id="txt" type="text" value="" placeholder="eg teans"  > <br>
+                <button id="click" onclick="seach()">search</button>
+            </form>
+        </nav>
+        <article>
+            <div id="core">            
+            </div>
+        </article>
+    </main>
+    <script src="demo10.js"></script>
+</body>
+</html>

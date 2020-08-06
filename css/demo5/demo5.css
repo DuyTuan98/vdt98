@@ -1,0 +1,32 @@
+section.card {
+    width: 500px;
+    background-color: #f00000;
+    border: 3px solid;
+    border-radius: 25px;
+}
+h2{
+    padding-left: 20px;
+}
+article {
+    position: relative;
+    height: 11em;
+    background-color: #bf0000;
+    color: #dfbcc9;
+    margin: 1px;
+}
+article p {
+    margin: 0;
+    padding: 20px 10px;
+    font-family: sans-serif;
+}
+img {
+    position: absolute;
+    /* left: 64%; */
+    right: -1px;
+    max-height: 100%;
+}
+footer p{
+    padding:5px 15px;
+    font-family: Arial;
+    font-size: 1.2em;
+}

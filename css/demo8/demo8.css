@@ -1,0 +1,158 @@
+html,body{margin: 0;padding: 0;}
+body{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 97%;
+    height: 400px;
+    margin: auto;
+    border: 1px solid rgb(192, 190, 190);
+    box-shadow: 2px 2px 5px rgb(230, 227, 227);
+    font-family: 'Lexend Mega', serif;
+    letter-spacing: -1px;
+}
+header{
+    position: relative;
+    display: flex;
+    margin: 5px 20px;
+}
+header h1{
+    font-size: 3vw;
+    margin: 0;
+    color: #282829d4;
+}
+header p b{
+    font-size: 3vw;
+    margin: 0 0 0 20px;
+    color: #282829d4;
+}
+header img{
+    width: 90px;
+    height: 90px;
+    margin-top: 0;
+}
+header p{
+    color: rgb(133, 133, 133);
+    font-size: 1vw;
+}
+#F{
+    position: relative;
+    top: -17px;
+    
+}
+header .Information{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+/* end header */
+
+article{
+    display: flex; 
+    margin: auto;
+    font-style: normal;
+    width: 100%;
+}
+article .day{
+    width: 120px;
+    height: 145px;
+    text-align: center;
+    margin: 2% 3%;
+    font-size: 1vw;
+}
+article img{
+    margin: auto;
+}
+article p{
+    margin: 0;
+    display: inline;
+}
+.under,.warm{
+    color: rgb(192, 190, 190);
+}
+img{
+    max-width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    article .day{
+        width: 120px;
+        height: 145px;
+        text-align: center;
+        margin: 2% 2%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    body{
+        position: relative;
+        top: 0;
+        width: 100%;
+        min-width: 320px;
+        border: none;
+        box-shadow: none;
+    }
+    header{
+        width: 100%;
+        border-bottom: 1.5px solid rgb(221, 217, 217);
+    }
+    header h1{
+        font-size: 5vw;
+        margin: 0;
+    }
+    header p b{
+        font-size: 4vw;
+        margin: 20px 0px 0px 15px;
+        color: #282829d4;
+    }
+    header img{
+        width: 30%;
+        height: auto;
+        margin-top: 0;
+    }
+    header p{
+        font-size: 3vw;
+    }
+    #F{
+        position: relative;
+        top: 2%;
+        
+    }
+    header .Information{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    /* end header */
+    article{
+        flex-direction: column;
+    }
+    article .day{
+        width: 100%;
+        height: auto;
+        display: flex;
+        border-bottom: 1.5px solid rgb(221, 217, 217);
+        align-items: center;
+        margin:0 5%;
+    }
+    .day p{
+        display: block;
+        width: 40%;
+        margin-left: 3%;
+        font-size: 3vw;
+        padding: 0;
+        text-align: left;
+    }
+    .day img{
+        width: 10%;
+        margin:0 10%;
+    }
+    .on,.under{
+        display: block;
+        font-size: 3vw;
+    }
+    .day .warm{
+        width: 25%;
+        margin: 0 5%;
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,231 @@
+html{margin: 0;padding: 0}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+ }
+body{
+    background-color: white;
+    font-size: 10px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    height: 62px;
+    background-image: url(imges/fool.png);
+    color: white;
+    justify-content: space-between;
+}
+nav .text{
+    display: flex;
+    align-items: center;
+    
+}
+nav .text h2{
+    margin: 0 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+}
+nav .text p{
+    font-size: 1.2rem;
+    color: #7c7d80;
+}
+/* end text */
+header nav ul{
+    float: right;
+    display: flex;
+    margin: 0 50px;
+}
+header nav ul li{
+    font-size: 1.2rem;
+    display: flex;
+    float: right;
+    align-items: center;
+    margin: -1px -0.5px;
+    border-right: 1px solid #2e333d;
+    border-left: 1px solid #2e333d;
+    padding: 0 30px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+}
+header nav ul li:hover{
+    background-color: #111419;
+}
+header nav ul li img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+/* end ul */
+header .image{
+    height: 470px;
+    background-image: url(imges/a1.png);
+    color: white;
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 2%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+header .image h1{
+    font-size: 52pt;
+}
+header .image p{
+    font-size: 22pt;
+}
+header .image .b1{
+    width: 230px;
+    height: 50px;
+    margin-right: 25px;
+    background-color: #83c129;
+    color: white;
+    font-size: 18pt;
+    text-decoration: none;
+    display: inline-flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px #518719;
+}
+header .image .b2{
+    display: inline-flex;
+    width: 175px;
+    height: 50px;
+    background-color:  #068fd5;
+    color: white;
+    font-size: 18pt;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px #046b9f ;
+}
+
+main{
+    height: 740px;
+    background-color: white;
+}
+/* main */
+main{
+    margin-top: -10px;
+}
+main aside{
+    display: flex;
+    justify-content: space-around;
+    
+}
+main .maxitem{
+    /* margin: 80px 0; */
+    box-sizing: border-box;
+    padding: 80px 0;
+}
+main aside .item{
+    background-image: url(imges/nen.png);
+    background-size: cover;
+    width: 360px;
+    height: 285px;   
+    flex-wrap: wrap;   
+}
+main aside .item img.max{
+    margin: 20px 20px 0px 20px;
+}
+
+main aside .item .bottom{
+    display: flex;
+    /* flex-direction: row; */
+    color: #bbbfc4;
+    font-size: 14pt;
+}
+.item .bottom b{
+    font-size: 16pt;
+    color: #454e5c;
+}
+.item .bottom p{
+    margin-top: 7px;
+}
+img.min {
+    display: block;
+    margin: 10px 20px;
+    width: 50px;
+    height: 50px;
+}
+/* end item */
+aside.maxtile {
+    border-bottom: 2px solid #e7e8ea;
+    border-top: 2px solid #e7e8ea;
+}
+main aside .title{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 100px;
+    margin: 30px 0;
+} 
+.title p{
+    font-size: 16pt;
+    margin: 5px 10px;
+    color: #8e949c;
+}
+.title p b{
+    color: #dadde1;
+}
+.title img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+/* end title */
+aside.text{
+    /* margin: 60px 0; */
+}
+aside.text img{
+    height: 33px;
+    margin: 50px 0;
+}
+.text .text1{
+    font-size: 16pt;
+    font-family:  'Lato';
+    margin: 50px 0;
+}
+.text .text2{
+    font-size: 30pt;
+    font-family:  'Lato', sans-serif;
+    color: #d2d5d7;
+}
+
+/* footer */
+
+footer{
+    height: 230px;
+    background-image: url("imges/fool.png");
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 40px 70px;
+    font-family: 'Lato', sans-serif;
+}
+.left table th,td {
+    padding: 0;
+    width: 150px;
+    height: 25px;
+    font-size: 12pt;
+}
+.left table th{
+    text-align: left;
+}
+.left table td{ color: #5c6167;}
+.right p{
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 12pt;
+    color: #6b7279;
+    margin-top: 100px;
+    text-align: right;
+    line-height: 40px;
+}
+.right img{
+    float: right;
+    margin-left: 10px;
+}

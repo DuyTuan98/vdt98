@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo12.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ec33848037.js  "></script>
+ <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.2.619/styles/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.2.619/styles/kendo.materialblack.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.2.619/styles/kendo.materialblack.mobile.min.css" />
+</head>
+<body>
+    <nav >
+        <div class="list_menu">
+            
+            <p>Analytics</p>
+            
+            <i class="fas fa-bars" id="click"></i>
+           
+        </div>
+        <div class="list_seach">
+            <input id="txt" type="search" value="" placeholder="seach......."  >
+        </div>
+        <div class="list homes">
+            <div class="left">
+                <i class="fas fa-home"></i>
+                <p>Home</p>
+            </div>           
+        </div>
+        <div class="list foods ">
+            <div class="left">
+                <i class="fas fa-drumstick-bite"></i>
+                <p>Foods</p>    
+            </div>           
+        </div>
+        <div class="list">
+            <div class="left">
+                    <i class="fas fa-address-book"></i>
+                <p>ACER</p>
+            </div>
+            <button>Add New</button>
+        </div>
+        <div class="list">
+            <div class="left">
+                    <i class="fas fa-user-circle"></i>
+                <p>ASUA</p>
+            </div>
+            <button>Add New</button>
+        </div>
+        <div class="list">
+            <div class="left">
+                    <i class="fab fa-android"></i>
+                <p>SAMSUNG</p>
+            </div>
+            <button>Add New</button>
+        </div>
+        <div class="list">
+            <div class="left">
+                <i class="fas fa-database"></i>
+                <p>NOKIA</p>
+            </div>
+            <button>Add New</button>
+        </div>
+        <div class="list">
+            <div class="left">
+                    <i class="fas fa-camera"></i>
+                <p>XIAOMI</p>
+            </div>
+            <button>Add New</button>
+        </div>
+        <div class="list">
+            <div class="left">
+                    <i class="fas fa-apple-alt"></i>
+                <p>Iphone</p>
+            </div>
+            <button>Add New</button>
+        </div>
+         
+        <div class="menu">
+            
+
+        </div>
+    </nav>
+    <main>
+        <div class="head" >
+            <p>Analytics</p>
+            <p style="color: #72bee6;">&#62;</p>
+            <p id="more">Home </p>
+        </div>
+        <!-- home -->
+        <div class="show_hide" id="Home">
+            <div class="head">
+                <p>Home</p>
+                <button>View All</button>
+            </div>
+            <div class="images">
+                <div class="image" style="background-color: #6ccac9;">
+                    <div class="info">
+                        <p class="max">33</p>
+                        <p>Data Sources</p>
+                    </div>
+                    <i class="fas fa-tv"></i>
+                </div>
+                <div class="image" style="background-color: #fd7a6f;">
+                    <div class="info">
+                        <p class="max">5</p>
+                        <p>Active Data Sources</p>
+                    </div>
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="image" style="background-color: #ffbe58;">
+                    <div class="info">
+                        <p class="max">216.41 k</p>
+                        <p>Total Document</p>
+                    </div>
+                    <i class="fas fa-file-word"></i>
+                </div>
+                <div class="image" style="background-color: #57c8f2;">
+                    <div class="info">
+                        <p class="max">202 MB</p>
+                        <p>Total Data processed</p>
+                    </div>
+                    <i class="fas fa-database"></i>
+                </div>               
+            </div>
+            <div class="data">
+                    <p>Data Connector</p>
+            </div>
+            <img src="a3.png" alt="">
+        </div>
+        <!-- foods -->
+        <div class="show_hide off" id="Foods" >
+        </div>
+        <div class="show_hide off" id="ACER" >
+            <img src="logo/acer.jpg" alt="">
+        </div>
+        <div class="show_hide off" id="SAMSUNG" >
+            <img src="logo/samsung.png" alt="">
+        </div>
+        <div class="show_hide off" id="ASUS" >
+            <img src="logo/asus.jpg" alt="">
+        </div>
+    </main>
+    <script src="demo12.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2019.2.619/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2019.2.619/js/kendo.all.min.js"></script>
+</body>
+</html>
