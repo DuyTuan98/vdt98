@@ -1,0 +1,24 @@
+﻿-Flexbox
++ tạo ra các layout hoặc dễ dàng căn chỉnh nội dung 
++ để tạo layout 1 chiều	
++ Flexbox thì lấy content làm nền tảng
+-Grid
++một hệ thống bố cục hoàn toàn mới trong CSS
++đó là một bổ sung cho ngôn ngữ cho phép chúng tôi nhanh chóng tạo ra bố cục hai chiều linh hoạt.
++Grid thì sẽ là layout làm nền tảng
++Chúng ta có thể sử dụng nó để đặt kích thước, căn chỉnh và thiết kế kiến ​​trúc mà trước đây khó hoặc thậm chí là không thể với flexbox.
++sẽ giúp cho đoạn markup của bạn đơn giản hơn, dễ quản lý code hơn.
+
+-CSS Flexible Box Layout là Mô-đun bố trí CSS Flexbox- là một mô-đun CSS xác định mô hình hộp CSS được tối ưu hóa cho thiết kế giao diện người dùng và bố cục các mục theo một chiều.
+
+
+-Flexbox
++ tạo ra các layout hoặc dễ dàng căn chỉnh nội dung 
++ để tạo layout 1 chiều	
++ Flexbox thì lấy content làm nền tảng
+-Flexbox hay còn gọi là Flexible Box Layout Module, kỹ thuật cho phép xây dựng những components hay grids linh hoạt một cách dễ dàng
+
+-Có thể thấy rằng các phiên bản mới nhất của hầu hết browsers đều đã hỗ trợ thuộc tính này mà không cần nhà cung cấp.
+
+Khi nào bạn nên sử dụng Flex? khi bố cục đơn giản,1 chiều
+Khi nào bạn nên sử dụng Grid? khi bố cục phức tạp hơn,2 chiều

@@ -1,0 +1,162 @@
+
+body{margin: 0; padding: 0; display: grid;
+    grid-template-areas:
+    ' Header Header Header Header'
+    ' LeftSide Body Body RightSide '
+    ' Footer Footer Footer Footer ';
+    }
+
+    /*header*/
+header { grid-area: Header; 
+       background-color: black; 
+       display: flex; 
+       justify-content: space-around; 
+       align-items: center; }
+
+.logo img{ width: 50%; height: 55px;}
+
+ul { display: flex;  font-size: 20px; padding: 10px; }
+
+ul li {margin-right: 30px;}
+
+ul li a {color: white; text-decoration: none; list-style: none;}
+
+h1:hover { color:red ;}
+/*icon*/
+.icon{
+    display: none;
+}
+ 
+
+/*LeftSide*/
+.LeftSide { grid-area: LeftSide;  border: 1px solid #2f2828 ;   }
+
+.Categories{ display: flex; flex-direction: column;}
+
+.Categories a{ color: black;font-size: 20px; margin-bottom: 15px;}
+
+.LeftSide > a{text-decoration: none; color: black;}
+
+   
+/*Body*/
+.Body { grid-area: Body;border: 1px solid #2f2828; ; align-items: center;}
+
+.Products{ 
+    display: flex;      
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+    margin-top: 50px;
+}
+
+.Products img{ 
+    width: 250px;
+    height: 200px;
+    border: 1px solid #2f2828 ;
+    margin: 0 10px 10px 0;
+    transition: transform 1s 
+ }
+ .Products img:hover{ transform: scale(1.1); }
+
+/*RightSide*/
+.RightSide {grid-area: RightSide;  
+            border: 1px solid #2f2828 ; 
+            display: flex; 
+            flex-direction: column;}
+
+.Top-Blog-Post{ display: flex; flex-direction: column; align-items: center; }
+
+.Top-Blog-Post img{ width: 200px; height: 150px; margin: 10px 10px 10px 10px;}
+
+.Newest-Blog-Post{ display: flex; flex-direction: column; align-items: center;  }
+
+.Newest-Blog-Post img{ width: 200px; height: 150px; margin: 10px 10px 10px 10px;}
+
+.ImgRight{display: flex; flex-direction: column; }
+
+/*footer*/  
+footer { grid-area: Footer; background-color: black; 
+    /* position:sticky; bottom: 0;  */
+    display: flex; 
+    flex-direction: row; 
+    color: white; 
+    justify-content: flex-end; 
+}
+
+.Categories2{display: flex; flex-direction: row;}
+ h2{ margin-top: 0;}
+.Categories2 a{color: white; 
+    margin:10px 20px 5px;
+}
+
+.item1,.item2,.item3{ display: flex; flex-direction: column;}
+
+/* responsive
+@media only screen and (max-width:1024px){ 
+
+ body{margin: 0; padding: 0; display: grid;
+     grid-template-areas:
+    ' Header Header Header Header'
+    'LeftSide LeftSide LeftSide LeftSide'
+    ' Body Body Body Body '
+    ' RightSide RightSide RightSide RightSide'
+    ' Footer Footer Footer Footer ';
+        }
+h1{font-size: 25px;}
+hr{width: 40%;}
+ul:hover li {display: block;margin-top: 20px;
+}
+.LeftSide {display: flex;justify-content: center;}
+.Categories{display: flex; flex-direction: row;margin: 20px 0 0 10px;}
+.Categories a{margin-right: 20px;}
+.RightSide{  flex-direction: column; }
+.ImgRight{display: flex; flex-direction: row; }
+}
+
+ @media only screen and (max-width:768px){
+    ul li{display: none;}
+    .icon{display: flex;
+        margin: 15px 20px 18px;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        font-size: 27px;
+        background-color: white;
+    }
+.Products img{  width: 350px;}
+.ImgRight{flex-wrap: wrap; justify-content: center;}
+.ImgRight img{width: 300px; height: 180px;}
+ }
+
+ @media only screen and (max-width:625px){
+        .Products{ flex-wrap: wrap;}
+        .Products img { width: 400px;}
+        .Top-Blog-Post img,.Newest-Blog-Post img { width: 390px;height: 200px;}
+
+
+ }
+
+ @media only screen and (max-width:425px){
+    body{
+    grid-template-areas:
+    ' Header Header Header Header '
+    ' LeftSide LeftSide LeftSide LeftSide'
+    ' Body Body Body Body '
+    'RightSide RightSide RightSide RightSide'
+    ' Footer Footer Footer Footer '; }
+    .Products{flex-direction: column;}
+    .RightSide{width: 100%;}
+    .RightSide{ display: flex;flex-wrap: wrap; flex-direction: column;}
+    .Top-Blog-Post img,.Newest-Blog-Post img {
+        width: 350px; }
+    .Top-Blog-Post{align-items: center;}
+    .Newest-Blog-Post{align-items: center;}
+    footer{flex-direction: column;}
+    footer h2{margin: 10px 50px 10px 288px; }
+    .Categories2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ImgRight{justify-content: center; flex-direction: column;  }
+} */
