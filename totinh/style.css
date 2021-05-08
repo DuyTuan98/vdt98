@@ -19,8 +19,8 @@
     display: flex;
     height: 500px;
     position: fixed;
-    left: 60%;
-    top: 50%;
+    left: 56%;
+    top: 25%;
   
 }
 .btn1, .btn2 {
@@ -50,10 +50,11 @@ align-self: center;
 
     .loveyou{
         background-image: url('yeu.jpg');
+        background-size: cover;
         position: absolute;
         left: 0;
-        height: 700px;
-        width: 400px;
+        height: 600px;
+        width: 300px;
         transform: rotate(360deg);
     }
    
@@ -122,3 +123,24 @@ align-self: center;
         transform: translate(-120%);
     } */
     
+    @media only screen and (max-width: 425px) {
+        .title {
+            position: fixed;
+            left: 0%;
+            text-align: center;
+            font-size: 25px;
+            color: red;
+            line-height: 25px;
+        }
+        .btn {
+            display: flex;
+            height: 500px;
+            position: fixed;
+            left: 10%;
+            top: 22%;
+        }
+        .loveyou{
+            height: 500px;
+            
+        }
+      }
